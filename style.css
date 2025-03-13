@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+*,html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    line-height: 1.6;
+    background-color: #eaf4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card-header {
+    padding: 20px;
+}
+
+.card-header h2 {
+    color: #219d9d;
+    text-align: left;
+    padding: 20px;
+}
+.card-header h3 {
+    color:  hsl(71, 73%, 54%);
+    text-align: left;
+    padding: 10px;
+}
+
+.card-header p {
+    color: gray;
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: left;
+    padding: 10px;
+}
+
+.highlight {
+    color: #b0d129;
+    font-weight: bold;
+}
+
+.card-body {
+    display: flex;
+    background: #2ab3b1;
+    color: white;
+    padding: 20px;
+}
+
+.left, .right {
+    flex: 1;
+    padding: 10px;
+}
+
+.left {
+    background-color:  hsl(179, 62%, 43%);
+    text-align: left;
+}
+
+.left h3 {
+    font-size: 1.7rem;
+}
+
+.left p {
+    font-weight: bold;
+    margin: 5px 0;
+    color: hsl(204, 43%, 93%);
+}
+
+.left span {
+    font-size: 3rem;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.right h3{
+    text-align: left;
+    font-size: 1.7rem;
+}
+
+.right ul {
+    list-style: none;
+    text-align: left;
+}
+
+.right ul li {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+.btn {
+  font-size: 1.2rem;
+    background: #b0d129;
+    color:  hsl(204, 43%, 93%);
+    text-align: center;
+    width: 80%;
+    padding: 15px;
+    border: none;
+    margin: 20px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media(max-width: 768px){
+    .card{
+        max-width: 90%;
+        margin-top: 17rem;
+    }
+  
+    .card-body{
+        flex-direction: column;
+        text-align: center;
+       
+        align-items: center;
+       
+    }
+    .right,.left{
+        width: 90%;
+    }
+    .btn {
+        width: 100%;
+    }
+}
